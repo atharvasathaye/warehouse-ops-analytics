@@ -1,0 +1,31 @@
+data_paths:
+  raw: data/raw
+  staged: data/staged
+  processed: data/processed
+  powerbi: data/powerbi
+
+erp_api:
+  base_url: http://localhost:8000
+  page_size: 100
+  timeout_seconds: 30
+  max_retries: 3
+
+drift_injection:
+  wms_drop_pct: 0.02
+  tms_drop_pct: 0.01
+  erp_drop_pct: 0.01
+  timestamp_jitter_hours: 4
+  price_rounding_error: 0.01
+  random_seed: 42
+
+thresholds:
+  timestamp_conflict_hours: 2
+  price_mismatch_tolerance: 0.05
+
+abc_classification:
+  a_threshold: 0.80
+  b_threshold: 0.95
+
+productivity:
+  seconds_per_pick: 45
+  warehouse_hours_per_day: 10
