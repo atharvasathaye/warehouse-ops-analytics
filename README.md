@@ -15,6 +15,13 @@ This project simulates that environment by taking the [Olist E-commerce Dataset]
 - **KPI Engine**: Calculates inventory turns, ABC classification, fill rates, order cycle times, and dock-to-ship metrics.
 - **Dimensional Modeling**: Outputs clean `fact` and `dim` tables in a Star Schema format for direct Power BI consumption.
 
+## Dashboard Preview
+The analytical outputs are visualized in a Power BI dashboard tracking exceptions and operational KPIs. 
+
+📄 **[View the Dashboard Export (PDF)](dashboards/Warehouse_Operations_Dashboard.pdf)**
+
+*(Note: To view the interactive dashboard, download `dashboards/Warehouse_Operations_Dashboard.pbix` and open it with Power BI Desktop).*
+
 ## Architecture
 
 Data flows through four primary phases:
