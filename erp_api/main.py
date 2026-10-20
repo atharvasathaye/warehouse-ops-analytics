@@ -58,5 +58,5 @@ def health_check() -> HealthResponse:
     return HealthResponse(
         status="ok",
         item_count=store.count(),
-        timestamp=datetime.datetime.utcnow().isoformat()
+        timestamp=datetime.datetime.now(datetime.timezone.utc).isoformat()
     )
